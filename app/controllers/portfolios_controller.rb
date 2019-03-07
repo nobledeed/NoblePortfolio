@@ -2,6 +2,11 @@ class PortfoliosController < ApplicationController
     def index
         @portfolio_items =Portfolio.all
     end
+
+    def rails
+      @rails_portfolio_items =Portfolio.rails
+    end
+
     def show
         @portfolio_item = Portfolio.find(params[:id])   
 
